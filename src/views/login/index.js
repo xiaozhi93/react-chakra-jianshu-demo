@@ -1,8 +1,11 @@
 import React from 'react'
-import { Box, Text } from '@chakra-ui/react'
+import { Container, Box } from '@chakra-ui/react'
+import SignIn from './SignIn'
 
 export default function Login() {
-  return <Box>
-    <Text>Login 页面</Text>
-  </Box>
+  return <Container>
+    <Box>
+      <SignIn/>
+    </Box>
+  </Container>
 }
