@@ -1,8 +1,9 @@
 import React from 'react'
 import  { Formik,Form, Field }  from 'formik'
 import * as Yup from 'yup'
-import { FormControl, Input, InputLeftAddon, InputGroup, FormErrorMessage } from '@chakra-ui/react'
+import { FormControl, Input, InputLeftAddon, InputGroup, FormErrorMessage, Button } from '@chakra-ui/react'
 import { FaLock, FaUser, FaVoicemail } from 'react-icons/fa'
+import { signUp } from '../../services/user'
 
 export default function SignUp() {
   // 表单初始值
@@ -12,7 +13,10 @@ export default function SignUp() {
     password: ''
   }
   // 表单提交
-  const handleSubmit = (values) => {}
+  const handleSubmit = async (values) => {
+    const { data } = await signUp(values)
+    console.log(data)
+  }
   // 表单校验
   const validateSchema = Yup.object({
     email: Yup.string().email('请输入正确的邮箱').required('请输入邮箱'),
@@ -63,6 +67,7 @@ export default function SignUp() {
         </FormControl>
       )}
     </Field>
+    <Button>注册</Button>
     </Form>
   </Formik>
 }
