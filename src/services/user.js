@@ -4,7 +4,7 @@ import request from '../utils/request'
 export const signIn = (user) => {
   return request({
     method: 'post',
-    url: '',
+    url: '/api/users/login',
     data: user
   })
 }
@@ -13,7 +13,7 @@ export const signIn = (user) => {
 export const signUp = (user) => {
   return request({
     method: 'post',
-    url: '',
+    url: '/api/users',
     data: user
   })
 }
