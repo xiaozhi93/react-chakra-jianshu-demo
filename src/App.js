@@ -8,6 +8,7 @@ import {
   ChakraProvider,
   theme,
 } from '@chakra-ui/react';
+import LoginLayout from './layouts/loginLayout'
 import Home from './views/home'
 import Login from './views/login'
 
@@ -20,10 +21,14 @@ function App() {
             <Home />
           </Route>
           <Route exact path="/sign_in">
-            <Login />
+            <LoginLayout>
+              <Login />
+            </LoginLayout>
           </Route>
           <Route exact path="/sign_up">
-            <Login />
+            <LoginLayout>
+              <Login />
+            </LoginLayout>
           </Route>
         </Switch>        
       </Router>
