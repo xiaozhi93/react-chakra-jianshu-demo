@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import  { Formik,Form, Field }  from 'formik'
 import * as Yup from 'yup'
-import { Button } from '@chakra-ui/react'
+import { Button, Link } from '@chakra-ui/react'
 import { FaLock, FaUser } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 import styled from '@emotion/styled'
@@ -74,11 +74,11 @@ export default function SignUp() {
     <Tip>
       点击 “注册” 即表示您同意并愿意遵守简书
       <br/>
-      <a>
+      <Link>
         用户协议
-      </a>
+      </Link>
       和
-      <a>隐私政策</a>。
+      <Link>隐私政策</Link>。
     </Tip>
     </Form>
   </Formik>
