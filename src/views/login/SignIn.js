@@ -73,7 +73,7 @@ export default function SignIn() {
       </MenuList>
       </Menu>
     </Flex>
-    <Button isLoading={loading} type="submit" mt="20px" w="100%" h="44px" color="#ffffff" bg="#3194d0" borderRadius="22px">登录</Button>
+    <Button isLoading={loading} type="submit" mt="20px" w="100%" h="44px" colorScheme="blue" borderRadius="22px">登录</Button>
     </Form>
   </Formik>
 }

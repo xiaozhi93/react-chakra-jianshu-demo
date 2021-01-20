@@ -70,7 +70,7 @@ export default function SignUp() {
         </FormControl>
       )}
     </Field>
-    <Button isLoading={loading} mt="20px" w="100%" h="44px" color="#ffffff" bg="#42c02e" borderRadius="22px">注册</Button>
+    <Button isLoading={loading} mt="20px" w="100%" h="44px" colorScheme="green" borderRadius="22px">注册</Button>
     <Tip>
       点击 “注册” 即表示您同意并愿意遵守简书
       <br/>
